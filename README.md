@@ -1,6 +1,6 @@
 # GR Color Engine
 
-The Ricoh GR IIIx colour pipeline, reverse-engineered from more than 200
+The Ricoh GR IIIx colour pipeline, reverse-engineered from 302
 in-camera developments of a single RAW file, and the engine behind
 [GR Recipe Lab](https://callmeseva.cc/recipelab/). It renders GR recipes
 (Image Control, sliders, white balance) on any photo in the browser with
