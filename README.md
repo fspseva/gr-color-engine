@@ -24,18 +24,18 @@ wins.
 
 | Package | What it is |
 |---|---|
-| [`@callmeseva/gr-color-engine`](packages/engine) | Renderer, recipe decoder, recipe links, recipe text, cards. Framework-free. |
-| [`@callmeseva/gr-color-react`](packages/react) | `<RecipePreview>` and `<RecipeSliders>` for React. |
-| [`@callmeseva/gr-color-mcp`](packages/mcp) | MCP server so AI coding assistants can build the engine into a project. |
+| [`@fspseva/gr-color-engine`](packages/engine) | Renderer, recipe decoder, recipe links, recipe text, cards. Framework-free. |
+| [`@fspseva/gr-color-react`](packages/react) | `<RecipePreview>` and `<RecipeSliders>` for React. |
+| [`@fspseva/gr-color-mcp`](packages/mcp) | MCP server so AI coding assistants can build the engine into a project. |
 
 ## Quick start
 
 ```sh
-npm i @callmeseva/gr-color-engine
+npm i @fspseva/gr-color-engine
 ```
 
 ```ts
-import { RecipeRenderer, createDefaultParams, decodeRecipeFromFile, loadCameraImage } from '@callmeseva/gr-color-engine';
+import { RecipeRenderer, createDefaultParams, decodeRecipeFromFile, loadCameraImage } from '@fspseva/gr-color-engine';
 
 const renderer = new RecipeRenderer(document.querySelector('canvas')!);
 await renderer.setImage(await loadCameraImage(file));
@@ -48,7 +48,7 @@ renderer.render({ ...createDefaultParams('positive-film'), saturation: 2, wbShif
 React:
 
 ```tsx
-import { RecipePreview, RecipeSliders } from '@callmeseva/gr-color-react';
+import { RecipePreview, RecipeSliders } from '@fspseva/gr-color-react';
 
 <RecipePreview image={photoUrl} params={params} />
 <RecipeSliders params={params} onChange={setParams} />
@@ -57,7 +57,7 @@ import { RecipePreview, RecipeSliders } from '@callmeseva/gr-color-react';
 ## For AI coding assistants (MCP)
 
 ```sh
-claude mcp add gr-color -- npx -y @callmeseva/gr-color-mcp
+claude mcp add gr-color -- npx -y @fspseva/gr-color-mcp
 ```
 
 Tools: `describe_stack`, `list_image_controls`, `decode_recipe` (reads a

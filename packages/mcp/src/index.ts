@@ -23,7 +23,7 @@ import {
   xText,
   orderedRows,
   type RecipeParams,
-} from '@callmeseva/gr-color-engine';
+} from '@fspseva/gr-color-engine';
 
 const SITE = 'https://callmeseva.cc/recipelab/';
 
@@ -117,11 +117,11 @@ server.tool('decode_link', 'Read the settings, name and credit out of a recipe l
 });
 
 const GUIDE: Record<string, string> = {
-  react: `npm i @callmeseva/gr-color-engine @callmeseva/gr-color-react
+  react: `npm i @fspseva/gr-color-engine @fspseva/gr-color-react
 
 import { useState } from 'react';
-import { createDefaultParams } from '@callmeseva/gr-color-engine';
-import { RecipePreview, RecipeSliders } from '@callmeseva/gr-color-react';
+import { createDefaultParams } from '@fspseva/gr-color-engine';
+import { RecipePreview, RecipeSliders } from '@fspseva/gr-color-react';
 
 export function Editor({ photoUrl }: { photoUrl: string }) {
   const [params, setParams] = useState(createDefaultParams('positive-film'));
@@ -137,9 +137,9 @@ export function Editor({ photoUrl }: { photoUrl: string }) {
 // engine undoes the look already baked in before applying a new one:
 //   const out = await decodeRecipeFromFile(file);
 //   <RecipePreview image={bitmap} params={params} baseline={out.status === 'decoded' ? out.result.params : undefined} />`,
-  vanilla: `npm i @callmeseva/gr-color-engine
+  vanilla: `npm i @fspseva/gr-color-engine
 
-import { RecipeRenderer, createDefaultParams, decodeRecipeFromFile, loadCameraImage } from '@callmeseva/gr-color-engine';
+import { RecipeRenderer, createDefaultParams, decodeRecipeFromFile, loadCameraImage } from '@fspseva/gr-color-engine';
 
 const canvas = document.querySelector('canvas');
 const renderer = new RecipeRenderer(canvas);          // WebGL; throws WebGLUnavailableError without it
@@ -148,7 +148,7 @@ await renderer.setImage(image);
 const shot = await decodeRecipeFromFile(file);        // the recipe the photo was shot with
 const baseline = shot.status === 'decoded' ? shot.result.params : undefined;
 renderer.render({ ...createDefaultParams('negative-film'), saturation: 2, wbShiftAB: 4 }, { baseline });`,
-  cards: `import { buildCardData, drawRecipeCard, drawSocial } from '@callmeseva/gr-color-engine';
+  cards: `import { buildCardData, drawRecipeCard, drawSocial } from '@fspseva/gr-color-engine';
 
 // Recipe card (1000×1400, or 1000×1778 with a photo):
 const card = drawRecipeCard(buildCardData(params, { name: 'My recipe', credit: '@me' }), renderedCanvas);

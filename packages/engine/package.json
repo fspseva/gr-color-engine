@@ -1,5 +1,5 @@
 {
-  "name": "@callmeseva/gr-color-engine",
+  "name": "@fspseva/gr-color-engine",
   "version": "1.0.0",
   "description": "The Ricoh GR IIIx colour pipeline, reverse-engineered from in-camera developments: WebGL renderer, recipe decoder, recipe links and cards.",
   "license": "PolyForm-Noncommercial-1.0.0",

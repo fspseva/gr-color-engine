@@ -1,4 +1,4 @@
-# @callmeseva/gr-color-mcp
+# @fspseva/gr-color-mcp
 
 MCP server for the GR Color Engine: lets AI coding assistants describe, decode, format and integrate Ricoh GR recipes.
 

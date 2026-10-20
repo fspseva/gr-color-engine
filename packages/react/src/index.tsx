@@ -6,7 +6,7 @@ import {
   IMAGE_CONTROLS,
   clampParams,
   type RecipeParams,
-} from '@callmeseva/gr-color-engine';
+} from '@fspseva/gr-color-engine';
 
 export interface RecipePreviewProps {
   /** The photo: an ImageBitmap, an <img>, or a URL. */

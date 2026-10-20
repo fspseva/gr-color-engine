@@ -1,4 +1,4 @@
-# @callmeseva/gr-color-react
+# @fspseva/gr-color-react
 
 React components for the GR Color Engine: live recipe preview and camera sliders.
 

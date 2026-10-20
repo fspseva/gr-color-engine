@@ -1,4 +1,4 @@
-# @callmeseva/gr-color-engine
+# @fspseva/gr-color-engine
 
 The Ricoh GR IIIx colour pipeline, reverse-engineered from in-camera developments: WebGL renderer, recipe decoder, recipe links and cards.
 
