@@ -12,6 +12,14 @@ How it was built, layer by layer, with accuracy numbers:
 
 Free for non-commercial use, with credit. Not affiliated with Ricoh.
 
+## Why it's free
+
+This is research, not a product. It took 302 in-camera developments to
+measure the GR's colour, and it's published so nobody has to repeat that
+work. The goal is better free tools for the GR community. If you use the
+engine, please keep your app free for the people who use it too. Everybody
+wins.
+
 ## Packages
 
 | Package | What it is |
