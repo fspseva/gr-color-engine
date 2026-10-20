@@ -1,0 +1,14 @@
+{
+  "name": "@callmeseva/gr-color-engine",
+  "version": "1.0.0",
+  "description": "The Ricoh GR IIIx colour pipeline, reverse-engineered from in-camera developments: WebGL renderer, recipe decoder, recipe links and cards.",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "author": "Fabio Seva (callmeSeva)",
+  "homepage": "https://callmeseva.cc/recipelab/how-it-works/",
+  "type": "module",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist", "LICENSE", "README.md"],
+  "scripts": { "build": "tsup src/index.ts --format esm --dts --clean", "test": "vitest run" },
+  "dependencies": { "exifr": "^7.1.3" },
+  "devDependencies": { "tsup": "^8.5.0", "typescript": "^5.8.0", "vitest": "^3.2.0" }
+}

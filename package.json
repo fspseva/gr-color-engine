@@ -1,0 +1,9 @@
+{
+  "name": "gr-color-engine-monorepo",
+  "private": true,
+  "workspaces": ["packages/engine", "packages/react", "packages/mcp"],
+  "scripts": {
+    "build": "npm run build -w packages/engine && npm run build -w packages/react && npm run build -w packages/mcp",
+    "test": "npm test -w packages/engine"
+  }
+}

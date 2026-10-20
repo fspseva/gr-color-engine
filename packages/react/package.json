@@ -1,0 +1,13 @@
+{
+  "name": "@callmeseva/gr-color-react",
+  "version": "1.0.0",
+  "description": "React components for the GR Color Engine: live recipe preview and camera sliders.",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "author": "Fabio Seva (callmeSeva)",
+  "type": "module",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist", "LICENSE", "README.md"],
+  "scripts": { "build": "tsup src/index.tsx --format esm --dts --clean --external react --external @callmeseva/gr-color-engine" },
+  "peerDependencies": { "react": ">=18", "@callmeseva/gr-color-engine": "^1.0.0" },
+  "devDependencies": { "@types/react": "^19.1.0", "react": "^19.1.0", "tsup": "^8.5.0", "typescript": "^5.8.0" }
+}
